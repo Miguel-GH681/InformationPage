@@ -1,0 +1,16 @@
+*{
+    padding: 12px;
+}
+
+.calentador{
+    width: 100%;
+}
+
+h2{
+    color: rgb(10, 84, 154);
+}
+
+p{
+    margin: 0px;
+    padding: 0px;
+}
