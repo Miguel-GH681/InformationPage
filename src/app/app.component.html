@@ -1,2 +1,4 @@
-<app-header></app-header>
-<app-producto></app-producto>
+<app-header (optionView)="changeViews($event)"></app-header>
+<app-producto [producto]="producto" *ngIf="viewProduct == true"></app-producto>
+<app-accesorios [accesoriesProduct]="producto" *ngIf="viewAccesories == true"></app-accesorios>
+<app-anexo [productos]="productos" *ngIf="viewExtras == true"></app-anexo>

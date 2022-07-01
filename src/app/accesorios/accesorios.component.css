@@ -1,0 +1,12 @@
+*{
+    padding: 12px;
+}
+
+.titulo{
+    padding: 0px;
+    text-align: center;
+}
+
+thead{
+    text-align: center;
+}

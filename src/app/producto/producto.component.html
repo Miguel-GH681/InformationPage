@@ -1,14 +1,50 @@
-<h2>Calentador thermo master 10 kw</h2>
-<div class="imagecontainer">
-    <img src="./../../assets/images/calentador.jpg" alt="" class="calentador">
-</div>
-<h2>Q1,750.00</h2>
-<p>
-    <b>Código Epa: 24-40-003</b>
-</p>
-<div >
-    <app-informationtable></app-informationtable>
-</div>
 <div>
-    <app-accessorytable></app-accessorytable>
+  <div class="titulo">
+    <h1>{{producto.nombre}}</h1>
+  </div>
+    <img src="./../../assets/images/calentador.jpg" alt="calentador" class="calentadorimg">
+    <div class="container description">
+        <div class="row">
+            <div class="col">
+                Código <br>
+                {{producto.codigoepa}}
+            </div>
+            <div class="col">
+                Precio <br>
+                Q{{producto.precio}}
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr class="bg-warning">
+              <th colspan="2" class="title">Atributos del producto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Potencia</th>
+              <td>{{producto.potencia}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Corriente</th>
+              <td>{{producto.corriente}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Marca</th>
+              <td>{{producto.marca}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Material</th>
+              <td>{{producto.material}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Servicios</th>
+              <td>{{producto.servicios}}</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
 </div>

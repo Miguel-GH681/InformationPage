@@ -1,0 +1,77 @@
+<div>
+    <h4>Partes del calentador</h4>
+    <div>
+        <img src="./../../assets/images/calentador_partes.jpg" alt="" class="calentadorpartes">
+    </div>        
+
+    <div>
+        <table class="table table-bordered">
+            <thead>
+            <tr class="bg-warning">
+                <th scope="col">No.</th>
+                <th scope="col">Descripción</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Selector de Temperaturas</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Visor de Temperatura</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Indicador calentador trabajando</td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>Indicador calentador no trabajando</td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>Entrada de Agua fría</td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td>Entrada de Agua Caliente</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <h2>Versus</h2>
+        <button type="button" class="btn btn-warning" *ngFor="let producto of productos" (click)="getVersus(producto.codigoepa)">{{producto.marca}} {{producto.potencia}}</button>
+        
+        <table class="table table-bordered" *ngIf="showTable==true">
+            <thead>
+                <tr>
+                    <th colspan="3">Tabla de comparación</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Potencia</td>
+                    <td>{{product?.potencia}}</td>
+                    <td>{{productCompared?.potencia}}</td>
+                </tr>
+                <tr>
+                    <td>Voltaje</td>
+                    <td>{{product?.voltaje}}</td>
+                    <td>{{productCompared?.voltaje}}</td>
+                </tr>
+                <tr>
+                    <td>Servicios</td>
+                    <td>{{product?.servicios}}</td>
+                    <td>{{productCompared?.servicios}}</td>
+                </tr>
+                <tr>
+                    <td>Precio</td>
+                    <td>{{product?.precio}}</td>
+                    <td>{{productCompared?.precio}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

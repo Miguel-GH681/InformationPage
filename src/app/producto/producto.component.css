@@ -2,15 +2,22 @@
     padding: 12px;
 }
 
-.calentador{
+.titulo{
+    padding: 0px;
+    text-align: center;
+}
+
+.calentadorimg{
     width: 100%;
 }
 
-h2{
-    color: rgb(10, 84, 154);
+.description{
+    padding: 0px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
 }
 
-p{
-    margin: 0px;
-    padding: 0px;
+thead{
+    text-align: center;
 }

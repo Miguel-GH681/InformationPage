@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AccessorytableComponent } from './accessorytable.component';
+import { AccesoriosComponent } from './accesorios.component';
 
-describe('AccessorytableComponent', () => {
-  let component: AccessorytableComponent;
-  let fixture: ComponentFixture<AccessorytableComponent>;
+describe('AccesoriosComponent', () => {
+  let component: AccesoriosComponent;
+  let fixture: ComponentFixture<AccesoriosComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AccessorytableComponent ]
+      declarations: [ AccesoriosComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(AccessorytableComponent);
+    fixture = TestBed.createComponent(AccesoriosComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
