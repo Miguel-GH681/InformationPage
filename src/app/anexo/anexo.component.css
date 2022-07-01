@@ -5,3 +5,7 @@
 .calentadorpartes{
     width: 100%;
 }
+
+thead{
+    text-align: center;
+}
